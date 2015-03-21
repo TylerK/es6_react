@@ -1,0 +1,23 @@
+{
+  "name": "web_modules",
+  "version": "0.1.0",
+  "description": "Boilerplate web_modules setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node bin/scripts/post-install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^4.7.16",
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.7.0",
+    "react": "^0.13.1",
+    "run-sequence": "^1.0.2",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0",
+    "watchify": "^2.4.0"
+  }
+}
