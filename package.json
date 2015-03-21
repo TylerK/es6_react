@@ -12,9 +12,11 @@
   "devDependencies": {
     "babel": "^4.7.16",
     "browserify": "^9.0.3",
+    "chalk": "^1.0.0",
     "gulp": "^3.8.11",
     "gulp-eslint": "^0.7.0",
     "react": "^0.13.1",
+    "rimraf": "^2.3.2",
     "run-sequence": "^1.0.2",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0",
