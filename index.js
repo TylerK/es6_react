@@ -1,7 +1,6 @@
 'use strict'
 
-
-require('node-jsx').install({ extension: '.jsx' })
+require('node-jsx').install({ extension: '.jsx', harmony: true })
 
 const express       = require('express')
     , http          = require('http')
@@ -9,7 +8,6 @@ const express       = require('express')
     , app           = express()
     , server        = http.createServer()
     , port          = process.env.PORT || 9999
-
 
 
 app.use(express.static(process.cwd() + '/dist'))
@@ -27,8 +25,7 @@ function onError (error) {
 }
 server.listen(app.get('port'))
 
-
-// Homepage
+// Replace this with iso-react
 app.get('/', function (req, res) {
   res.render('pages/index', {})
 })

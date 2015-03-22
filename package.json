@@ -1,7 +1,7 @@
 {
   "name": "web_modules",
   "version": "0.1.0",
-  "description": "Boilerplate web_modules setup",
+  "description": "Boilerplate ES6, React, Browserify project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,17 @@
   "license": "ISC",
   "devDependencies": {
     "babel": "^4.7.16",
+    "babelify": "^5.0.4",
+    "browser-sync": "^2.4.0",
     "browserify": "^9.0.3",
     "chalk": "^1.0.0",
     "gulp": "^3.8.11",
     "gulp-eslint": "^0.7.0",
     "gulp-stylus": "^2.0.1",
+    "gulp-util": "^3.0.4",
+    "lodash": "^3.5.0",
     "react": "^0.13.1",
+    "reactify": "^1.1.0",
     "rimraf": "^2.3.2",
     "run-sequence": "^1.0.2",
     "vinyl-source-stream": "^1.1.0",

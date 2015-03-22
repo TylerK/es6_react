@@ -1,0 +1,13 @@
+
+
+import React from 'react'
+
+
+
+export class Test extends React.Component {
+  render() {
+    return (
+      <h5>Wtf</h5>
+    )
+  }
+}
