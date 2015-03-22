@@ -2,7 +2,6 @@
 
 import path         from 'path'
 import gulp         from 'gulp'
-import _            from 'lodash'
 import transform    from 'vinyl-transform'
 import source       from 'vinyl-source-stream'
 import browserify   from 'browserify'
