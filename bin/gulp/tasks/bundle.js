@@ -39,7 +39,7 @@ gulp.task('bundle', () => {
 
     return bundler
       .bundle()
-      .on('error', function (error) {
+      .on('error', () => {
         util.log(util.colors.cyan(error.message))
         this.end()
       })
