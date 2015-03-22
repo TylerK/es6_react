@@ -34,7 +34,9 @@ gulp.task('bundle', () => {
   const bundler = watchify(browserify(args))
 
   const rebundle = function () {
+
     util.log(util.colors.cyan('Bundling', util.colors.white('->'), config.scripts.name))
+
     return bundler
       .bundle()
       .on('error', function (error) {
