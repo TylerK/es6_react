@@ -9,6 +9,7 @@ import watchify     from 'watchify'
 import babelify     from 'babelify'
 import reactify     from 'reactify'
 import util         from 'gulp-util'
+import notify       from 'gulp-notify'
 import sync         from 'browser-sync'
 import config       from 'app/configs/gulp'
 
@@ -38,7 +39,7 @@ gulp.task('bundle', () => {
 
     return bundler
       .bundle()
-      .on('error', () => {
+      .on('error', function (error) {
         util.log(util.colors.cyan(error.message))
         this.end()
       })

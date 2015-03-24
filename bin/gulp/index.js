@@ -6,10 +6,10 @@ import clean        from './tasks/clean'
 import bundle       from './tasks/bundle'
 
 
-gulp.task('dev', (cb) =>
+gulp.task('dev', (cb) => {
   sequence(
     'clean'
-    , ['bundle']
+    , ['bundle', 'styles']
     , cb
   )
-)
+})
