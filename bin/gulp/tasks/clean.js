@@ -2,7 +2,7 @@
 
 import gulp     from 'gulp'
 import del      from 'del'
-import config   from 'app/configs/gulp'
+import config   from '../config'
 
 
 

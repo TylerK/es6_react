@@ -11,7 +11,7 @@ import reactify     from 'reactify'
 import util         from 'gulp-util'
 import notify       from 'gulp-notify'
 import sync         from 'browser-sync'
-import config       from 'app/configs/gulp'
+import config       from '../config'
 
 
 

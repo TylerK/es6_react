@@ -12,8 +12,8 @@ const config = {
     name  : 'bundle.js'
   },
   styles  : {
-    src   : './src/style/index.style',
-    watch : './src/style/**/*',
+    src   : './src/styles/index.style',
+    watch : './src/styles/**/*',
     dest  : './dist/styles/',
     name  : 'app.css'
   }
