@@ -1,13 +1,13 @@
 
 
-var path          = require('path')
-  , process       = require('child_process')
-  , system        = require('fs')
-  , rmdir         = require('rimraf')
-  , chalk         = require('chalk')
-  , webModules    = path.resolve(__dirname, '../../web_modules')
-  , nodeModules   = path.resolve(__dirname, '../../node_modules')
-  , app           = path.join(nodeModules, 'app') // rename 'app'
+var path      = require('path')
+  , process   = require('child_process')
+  , system    = require('fs')
+  , rmdir     = require('rimraf')
+  , chalk     = require('chalk')
+  , src       = path.resolve(__dirname, '../../src')
+  , nm        = path.resolve(__dirname, '../../node_modules')
+  , app       = path.join(nm, 'app')
 
 
 
@@ -18,9 +18,9 @@ rmdir.sync(app, function (err) {})
 system.mkdirSync(app, function (err) {})
 
 // Symlink everything in ./web_modules/ to ./node_modules/app_name/
-system.readdirSync(webModules).forEach(function (module) {
-  var command = 'ln -s ' + path.join(webModules, module) + ' ' + path.join(app, module)
+system.readdirSync(src).forEach(function (module) {
+  var command = 'ln -s ' + path.join(src, module) + ' ' + path.join(app, module)
   process.exec(command, function(err){})
 })
 
-console.log(chalk.blue(webModules) + ' ' + chalk.white('<- successfully symlinked to ->') + ' ' + chalk.blue(app))
+console.log(chalk.blue(src) + ' ' + chalk.white('<- successfully symlinked to ->') + ' ' + chalk.blue(app))

@@ -21,14 +21,14 @@ gulp.task('bundle', () => {
   const reload = sync.reload
 
   const args = {
-    entries       : config.scripts.src,
-    globals       : true,
-    transform     : ['babelify', 'reactify'],
-    extensions    : ['.jsx'],
-    debug         : true,
-    cache         : {},
-    packageCache  : {},
-    fullPaths     : true
+    entries       : config.scripts.src
+    , globals       : true
+    , transform     : ['babelify', 'reactify']
+    , extensions    : ['.jsx']
+    , debug         : true
+    , cache         : {}
+    , packageCache  : {}
+    , fullPaths     : true
   }
 
   const bundler = watchify(browserify(args))

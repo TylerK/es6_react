@@ -2,8 +2,8 @@
   "name": "web_modules",
   "version": "0.1.0",
   "description": "Boilerplate ES6, React, Browserify project",
-  "main": "bootstrap.js",
   "scripts": {
+    "start": "node bootstrap.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node bin/scripts/post-install"
   },
@@ -36,6 +36,7 @@
   "dependencies": {
     "babel": "^4.7.16",
     "express": "^4.12.3",
+    "jade": "^1.9.2",
     "node-jsx": "^0.12.4"
   }
 }

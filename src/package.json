@@ -1,0 +1,6 @@
+{
+  "NOTE": "This is a hack so Browserify will read certain files out node_modules",
+  "browserify": {
+    "transform": ["babelify"]
+  }
+}

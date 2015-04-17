@@ -17,13 +17,11 @@ gulp.task('styles', () => {
 
   return gulp.src(config.styles.src)
     .pipe(stylus({
-      use: [nib(), jeet(), rupture()],
-      sourcemap: { inline: true },
-      compress: false,
-      linenos: false
+      use: [nib(), jeet(), rupture()]
+      , sourcemap: { inline: true }
+      , compress: false
+      , linenos: false
     }))
     .pipe(gulp.dest(config.styles.dest))
-    .pipe(reload({
-      stream: true
-    }))
+    .pipe(reload({ stream: true }))
 })
