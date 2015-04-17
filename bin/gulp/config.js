@@ -3,19 +3,22 @@
 import path from 'path'
 
 
-
 const config = {
+  src: path.resolve('src'),
+  dest: path.resolve('dist'),
+
   scripts : {
-    src   : './src/scripts/index.jsx',
-    watch : './src/scripts/**/*',
-    dest  : './dist/scripts/',
-    name  : 'bundle.js'
+    src:    path.resolve('src', 'index.jsx'),
+    watch:  path.resolve('src', '**/*.jsx'),
+    dest:   path.resolve('dist', 'scripts'),
+    name:   'bundle.js'
   },
+
   styles  : {
-    src   : './src/styles/index.style',
-    watch : './src/styles/**/*',
-    dest  : './dist/styles/',
-    name  : 'app.css'
+    src:    path.resolve('src/styles', 'app.styl'),
+    watch:  path.resolve('src/styles', '**/*.styl'),
+    dest:   path.resolve('dist', 'styles'),
+    name:   'app.css'
   }
 }
 

@@ -1,10 +1,10 @@
-
+require('node-jsx').install()
 
 import express  from 'express'
 import http     from 'http'
 import path     from 'path'
 import React    from 'react/addons'
-import App      from 'app/routes'
+import ReactApp from './src/routes'
 
 const app       = express()
 const server    = http.createServer()
@@ -27,6 +27,6 @@ server.listen(app.get('port'))
 
 app.use(express.static(process.cwd() + '/dist'))
 app.use(function(req, res, next) {
-  var html = React.renderToString(<App />);
+  var html = React.renderToString(<ReactApp />);
   res.send(html);
 });

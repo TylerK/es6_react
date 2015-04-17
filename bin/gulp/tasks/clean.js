@@ -7,5 +7,5 @@ import config   from '../config'
 
 
 gulp.task('clean', (cb) => {
-  del([config.scripts.dest], cb)
+  del([config.dest], cb)
 })

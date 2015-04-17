@@ -6,7 +6,8 @@ import sync from 'browser-sync'
 
 
 gulp.task('sync', () => {
-  const args = {
+
+  sync({
     proxy       : 'http://localhost:9999'
     , port      : 3000
     , logLevel  : 'info'
@@ -16,6 +17,6 @@ gulp.task('sync', () => {
       , scroll  : true
       , forms   : true
     }
-  }
-  sync(args)
+  })
+
 })
