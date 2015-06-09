@@ -1,0 +1,37 @@
+[
+  {
+    "ID": "1",
+    "firstName": "Ronald",
+    "lastName": "Perkins",
+    "userName": "rperkins0",
+    "avatar": "http://www.placecage.com/300/300"
+  },
+  {
+    "ID": "2",
+    "firstName": "Sandra",
+    "lastName": "Nguyen",
+    "userName": "snguyen1",
+    "avatar": "http://www.placecage.com/300/300"
+  },
+  {
+    "ID": "3",
+    "firstName": "Nicole",
+    "lastName": "Hawkins",
+    "userName": "n.hawkins",
+    "avatar": "http://www.placecage.com/300/300"
+  },
+  {
+    "ID": "4",
+    "firstName": "Carol",
+    "lastName": "Miller",
+    "userName": "c_miller_",
+    "avatar": "http://www.placecage.com/300/300"
+  },
+  {
+    "ID": "5",
+    "firstName": "Arthur",
+    "lastName": "Dean",
+    "userName": "ADean42",
+    "avatar": "http://www.placecage.com/300/300"
+  },
+]

@@ -1,2 +1,2 @@
 require('babel/register')
-require('bin/gulp')
+require('./bin/gulp')
